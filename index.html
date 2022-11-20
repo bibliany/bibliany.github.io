@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Livrany - Buscador de Livros Gratuitos</title>
+<meta name="description" content="Buscador de livros digitais ou impressos em bibliotecas públicas">
+<link rel="icon" type="image/png" href="logo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a { color: #000; }
+h1 { text-align: center; font-size: 30px; font-family: serif; margin-top: 0px; margin-bottom: -10px; }
+p { text-align: center; font-size: 14px; font-family: sans-serif; }
+select { text-align: center; font-size: 16px; height: 30px; width: 180px; border: 1px solid grey; border-radius: 2px; }
+input { text-align: center; margin: 10px; height: 40px; padding: 10px; font-size: 17px; border: 1px solid grey; width: 325px; border-radius: 10px; }
+button {text-align: center; margin-left: 4px; margin-right: 4px; font-size: 16px; height: 30px; width: 100px; border: 1px solid grey; border-radius: 7px; }
+.center { width: 350px; height: 250px; position: absolute; top: -180px; bottom: 0; left: 0; right: 0; margin: auto; text-align: center; }
+*:focus { outline: none; }
+</style>
+</head>
+<body>
+<div class="center">
+<img src="logo.png" height="128px" width="128px">
+<h1>Livrany</h1>
+<p>Buscador de Livros Gratuitos</p>
+<form name="searchform" onSubmit="return dosearch();">
+<select name="sengines">
+  <option value="https://biblion.odilo.us/results?limit=24&offset=0&order=relevance:desc&query=allfields_txt:">Livros digitais</option>
+  <option value="http://bibliotecacircula.prefeitura.sp.gov.br/pesquisa/resultado.jsf#ini&page=1&sort=relevancia%2526e_all%253D">Livros impressos</option>
+</select>
+<br><input type="search" name="searchterms" placeholder="Digite um título ou autor..." autofocus>
+<br><button type="submit">Buscar</button><button type="reset">Limpar</button> 
+</form>
+<p>Projeto de código aberto. Saiba mais <a href="https://github.com/livrany/livrany.github.io" target="_blank">aqui</a></p>
+</div>
+<script type="text/javascript">
+function dosearch() {
+var sf=document.searchform;
+var submitto = sf.sengines.options[sf.sengines.selectedIndex].value + (sf.searchterms.value);
+window.open(submitto);
+return false;
+}
+</script>
+</body>
+</html>
