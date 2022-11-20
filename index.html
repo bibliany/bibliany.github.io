@@ -2,8 +2,8 @@
 <html>
 <head>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1"> 
-<title>Bibliany - Buscador de Livros em Bibliotecas Públicas</title>
-<meta name="description" content="Buscador de livros digitais, audiolivros e livros impressos em bibliotecas públicas">
+<title>Bibliany - Buscador de Livros Digitais e Audiolivros</title>
+<meta name="description" content="Buscador de livros digitais e audiolivros em bibliotecas públicas">
 <link rel="icon" type="image/png" href="logo.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -24,9 +24,10 @@ button {text-align: center; margin-left: 4px; margin-right: 4px; font-size: 16px
 <p>Buscador de Livros em Bibliotecas Públicas</p>
 <form name="searchform" onSubmit="return dosearch();">
 <select name="sengines">
-  <option value="https://biblion.odilo.us/results?limit=24&offset=0&facets=format_facet_ss:%22EBOOK%22&order=relevance:desc&query=allfields_txt:">Livros digitais</option>
-  <option value="https://biblion.odilo.us/results?limit=24&offset=0&facets=format_facet_ss:%22AUDIO%22&order=relevance:desc&query=allfields_txt:">Audiolivros</option>
-  <option value="http://bibliotecacircula.prefeitura.sp.gov.br/pesquisa/resultado.jsf#ini&page=1&sort=relevancia%2526e_all%253D">Livros impressos</option>
+  <option value="https://biblion.odilo.us/results?limit=24&offset=0&order=relevance:desc&query=allfields_txt:">BibliON</option>
+  <option value="https://spleituras.tocalivros.com/audiolivros-e-ebooks?buscar=">SP Leituras</option>
+  <option value="https://bibliotecaparquedigital.odilo.us/results?limit=24&offset=0&order=relevance:desc&query=allfields_txt:">Parque Digital</option>
+  <option value="https://www.bbm.usp.br/pt-br/search/?&itensPage=10&selectSortKey=score+asc&filters=&select_items=&q=">Brasiliana</option>
 </select>
 <br><input type="search" name="searchterms" placeholder="Digite um título ou autor..." autofocus>
 <br><button type="submit">Buscar</button><button type="reset">Limpar</button> 
