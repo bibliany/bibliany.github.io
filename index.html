@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Livrany - Buscador de Livros Gratuitos</title>
+<title>Bibliany - Buscador de Livros em Bibliotecas</title>
 <meta name="description" content="Buscador de livros digitais ou impressos em bibliotecas públicas">
 <link rel="icon" type="image/png" href="logo.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,8 +20,8 @@ button {text-align: center; margin-left: 4px; margin-right: 4px; font-size: 16px
 <body>
 <div class="center">
 <img src="logo.png" height="128px" width="128px">
-<h1>Livrany</h1>
-<p>Buscador de Livros Gratuitos</p>
+<h1>Bibliany</h1>
+<p>Buscador de Livros em Bibliotecas</p>
 <form name="searchform" onSubmit="return dosearch();">
 <select name="sengines">
   <option value="https://biblion.odilo.us/results?limit=24&offset=0&order=relevance:desc&query=allfields_txt:">Livros digitais</option>
@@ -30,7 +30,7 @@ button {text-align: center; margin-left: 4px; margin-right: 4px; font-size: 16px
 <br><input type="search" name="searchterms" placeholder="Digite um título ou autor..." autofocus>
 <br><button type="submit">Buscar</button><button type="reset">Limpar</button> 
 </form>
-<p>Projeto de código aberto. Saiba mais <a href="https://github.com/livrany/livrany.github.io" target="_blank">aqui</a></p>
+<p>Projeto de código aberto. Saiba mais <a href="https://github.com/bibliany/bibliany.github.io" target="_blank">aqui</a></p>
 </div>
 <script type="text/javascript">
 function dosearch() {
