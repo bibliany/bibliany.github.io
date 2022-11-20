@@ -1,6 +1,6 @@
 # Bibliany
 
-Buscador de livros digitais e audiolivros em bibliotecas públicas
+Pesquise livros digitais e audiolivros em bibliotecas públicas online
 
 Criado e atualizado por Andrews Guerreiro, livreiro do sebomelivro.com
 
