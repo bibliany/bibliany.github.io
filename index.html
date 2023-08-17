@@ -86,7 +86,7 @@
 <div class="container">
   <p>Pesquise livros digitais e audiolivros em bibliotecas públicas online</p>
   <form class="search-form" name="searchform" onSubmit="return dosearch();">
-    <select name="sengines">
+    <select name="bibliotecas">
       <option value="https://biblion.odilo.us/results?limit=24&offset=0&order=relevance:desc&query=allfields_txt:">BibliON</option>
       <option value="https://spleituras.tocalivros.com/audiolivros-e-ebooks?buscar=">SP Leituras</option>
       <option value="https://bibliotecaparquedigital.odilo.us/results?limit=24&offset=0&order=relevance:desc&query=allfields_txt:">Parque Digital</option>
@@ -104,7 +104,7 @@
 <script type="text/javascript">
   function dosearch() {
     var sf = document.searchform;
-    var submitto = sf.sengines.options[sf.sengines.selectedIndex].value + sf.searchterms.value;
+    var submitto = sf.bibliotecas.options[sf.bibliotecas.selectedIndex].value + sf.searchterms.value;
     window.open(submitto);
     return false;
   }
